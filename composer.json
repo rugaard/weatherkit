@@ -1,0 +1,75 @@
+{
+  "name": "rugaard/weatherkit",
+  "type": "library",
+  "description": "Integrate Apple's WeatherKit into your project",
+  "keywords": [
+    "morten",
+    "rugaard",
+    "morten rugaard",
+    "weatherkit",
+    "apple weatherkit",
+    "weatherkit api",
+    "apple weatherkit api",
+    "api",
+    "weather",
+    "forecast",
+    "weather forecast"
+  ],
+  "authors": [
+    {
+      "name": "Morten Rugaard",
+      "email": "morten@rugaard.me",
+      "homepage": "https://github.com/rugaard",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rugaard",
+  "support": {
+    "issues": "https://github.com/rugaard/weatherkit/issues",
+    "source": "https://github.com/rugaard/weatherkit"
+  },
+  "require": {
+    "php": "^8.1",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "guzzlehttp/guzzle": "^7.0",
+    "illuminate/collections": "^9.26",
+    "firebase/php-jwt": "^6.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "squizlabs/php_codesniffer": "3.*",
+    "symfony/var-dumper": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rugaard\\WeatherKit\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Rugaard\\WeatherKit\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rugaard\\WeatherKit\\Providers\\LaravelServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit",
+    "cs": "./vendor/bin/phpcs"
+  },
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
