@@ -1,7 +1,7 @@
 {
   "name": "rugaard/weatherkit",
   "type": "library",
-  "description": "Integrate Apple's WeatherKit into your project",
+  "description": "Integrate Apple WeatherKit API into your project",
   "keywords": [
     "morten",
     "rugaard",
