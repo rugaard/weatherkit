@@ -51,6 +51,13 @@ class DailyTest extends AbstractTestCase
     protected Day $day;
 
     /**
+     * Period forecast data.
+     *
+     * @var \Rugaard\WeatherKit\DTO\Forecasts\Period
+     */
+    protected Period $period;
+
+    /**
      * Set up test case.
      *
      * @return void
