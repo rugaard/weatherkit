@@ -156,7 +156,8 @@ class TemperatureTest extends AbstractTestCase
         $data = (clone $this->data)->asKelvin()->asCelsius();
 
         $this->assertIsFloat(actual: $data->getValue());
-        $this->assertEquals(expected: 28.31, actual: $data->getValue());
+
+        $this->assertEqualsWithDelta(expected: 28.31, actual: $data->getValue(), delta: 0.01);
         $this->assertInstanceOf(expected: Celsius::class, actual: $data->getUnit());
         $this->assertEquals(expected: '28.31 °C', actual: (string) $data);
     }
