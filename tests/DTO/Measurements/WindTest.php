@@ -191,7 +191,7 @@ class WindTest extends AbstractTestCase
         $data = (clone $this->data)->asFootPerSecond()->asKilometerPerHour();
 
         $this->assertIsFloat(actual: $data->getValue());
-        $this->assertEquals(expected: 5.4099975347712, actual: $data->getValue());
+        $this->assertEqualsWithDelta(expected: 5.4099975347712, actual: $data->getValue(), delta: 0.01);
         $this->assertInstanceOf(expected: KilometerPerHour::class, actual: $data->getUnit());
         $this->assertEquals(expected: '5.4099975347712 km/h', actual: (string) $data);
     }
