@@ -34,7 +34,7 @@
     "ext-json": "*",
     "ext-openssl": "*",
     "guzzlehttp/guzzle": "^7.0",
-    "illuminate/collections": "^9.26",
+    "illuminate/collections": "^10.14",
     "firebase/php-jwt": "^6.3.0"
   },
   "require-dev": {
